@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2 class="heading">TimeZone API</h2>
+    <div class="users-current-tz">
+        <h2 class="current-time-zone-text">Your Current Time Zone</h2>
+        <div class="top-time-zone-info">
+            <p id="notz"></p>
+            <p id="lat" class="float-child"></p>
+            <p id="lon" class="float-child"></p>
+            <p id="offsetSTD"></p>
+            <p id="offsetSTDSeconds"></p>
+            <p id="offsetDST"></p>
+            <p id="offsetDSTSeconds"></p>
+            <p id="country"></p>
+            <p id="postcode"></p>
+            <p id="city"></p>
+        </div>
+    </div>
+    <div class="searched-tz">
+        <h2 class="address">Enter Address</h2>
+        <div class="address-input-info">
+            <input type="text" placeholder="Address" id="userInput">
+            <div>
+                <button type="submit" onclick="getUserInput()">Submit</button>
+            </div>
+        </div>
+        <p id="noti">Please enter an address.</p>
+        <p id="error">Timezone could not be found</p>
+        <h3 id="your-result">Your result</h3>
+        <div class="time-zone-info sample" id="outer-div">
+            <!-- p tags coming here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
